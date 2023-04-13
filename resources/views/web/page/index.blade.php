@@ -59,7 +59,7 @@
                             applications, systems design analysis & distributed technologies.
                         </p>
                         <div class="sign">
-                            <img alt="" src="img/sign/dark.png" />
+                            <img alt="" src="{{ asset('public/img/sign/dark.png') }}" />
                         </div>
                         <div class="lexal_tm_button">
                             <a href="https://egooktafanda97.github.io/files/cv-ego-oktafanda.pdf"><span>Download
