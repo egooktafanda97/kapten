@@ -21,15 +21,18 @@ Route::get('/welcome', function () {
     return view("welcome");
 });
 
-Route::get('/', [\App\Http\Controllers\HomeController::class, "home"]);
-Route::get('/porto/{id?}', [\App\Http\Controllers\HomeController::class, "project"]);
+Route::get('/', [\App\Http\Controllers\PostController::class, "show_list"]);
+Route::get('/blog', [\App\Http\Controllers\PostController::class, "show_list"]);
+Route::get('/blog/{slug}', [\App\Http\Controllers\PostController::class, "show"]);
+
+
+Route::group(["prefix" => "egooktafanda"], function ($router) {
+    Route::get('/', [\App\Http\Controllers\PortfolioController::class, "index"]);
+    Route::get('/project/{id?}', [\App\Http\Controllers\PortfolioController::class, "project"]);
+});
 
 Route::get('/noted', [\App\Http\Controllers\NotedController::class, "readed"]);
 Route::get('/new-noted', [\App\Http\Controllers\NotedController::class, "index"]);
-
-
-Route::get('/blog', [\App\Http\Controllers\PostController::class, "show_list"]);
-Route::get('/blog/{slug}', [\App\Http\Controllers\PostController::class, "show"]);
 
 
 Route::get('/sitemap', function () {

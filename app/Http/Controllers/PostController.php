@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Hit;
 use App\Models\Post;
 use App\Models\PostCategory;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -32,7 +33,14 @@ class PostController extends Controller
         $hitt->save();
 
         $post->load(['user', 'categories', 'tags']);
-        return view('blog.Singgle', compact('post'));
+
+        $data = [
+            "categories" => Category::all(),
+            "post" => $post,
+            "tags" => Tag::query()->get()
+        ];
+
+        return view('blog.Singgle', $data);
     }
 
     public function show_list(Request $request)

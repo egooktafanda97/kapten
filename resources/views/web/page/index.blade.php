@@ -7,7 +7,9 @@
         <div class="overlay_texts">
             <h3 class="name">Ego Oktafanda</h3>
             <p class="subtitle">web developer and data science</p>
-            <a href="{{ url('blog') }}">Blog</a>
+            <a class="button blog-btn button--rounded" href="{{ url('blog') }}">
+                Blog
+            </a>
         </div>
         <div class="lexal_tm_down anchor">
             <div class="down-icon white top_120">

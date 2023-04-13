@@ -1,12 +1,12 @@
 @extends('blog.app')
 @section('content')
     <div class="container mx-auto px-4 lg:px-8 mt-10">
-        <div class="grid grid-cols-1 lg:grid-cols-6 gap-8" id="article">
-            <div class="lg:col-span-4">
+        <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
+            <div class="lg:col-span-4" id="article">
                 <div class="lg:flex justify-between items-center">
-                    <div class="flex items-center pb-2">
-                        <img alt="Foto Penulis" class="w-10 h-10 rounded-full mr-4"
-                            src="https://miro.medium.com/v2/resize:fill:72:72/1*YhHjHHQnvLRlIqRhEhsnFw.jpeg">
+                    <a class="flex items-center pb-2" href="{{ url('egooktafanda') }}">
+                        <img alt="ego oktafanda" class="w-10 h-10 rounded-full mr-4"
+                            src="{{ asset('public/img/user/ego.jpg') }}">
                         <div>
                             <p class="text-gray-500 text-sm">ego oktafanda s.kom, m.kom</p>
                             <p class="text-gray-600 text-sm">
@@ -16,7 +16,7 @@
                         <div class="flex items-center">
                             {{-- kolom share --}}
                         </div>
-                    </div>
+                    </a>
 
                 </div>
                 <hr style="border-color:#1F2937">
@@ -66,7 +66,7 @@
             <div class="lg:col-span-2">
                 <!-- Profil Penulis -->
                 {{-- shadow-md  --}}
-                <div class="cards rounded-md p-6">
+                {{-- <div class="cards rounded-md p-6 mb-3">
                     <!-- Foto Profil -->
                     <div class="flex items-center justify-center">
                         <img alt="Foto Profil" class="rounded-full w-24 h-24"
@@ -88,8 +88,34 @@
                             +62 822-8473-3404
                         </div>
                     </div>
+                </div> --}}
+                {{-- <hr> --}}
+                <div class="rounded-lg cards shadow-lg p-4 mb-4">
+                    <h2 class="text-lg font-semibold mb-4">Kategori</h2>
+                    <hr>
+                    <ul class="space-y-1 mt-1">
+                        @foreach ($categories as $item)
+                            <li>
+                                <a class="block py-3 px-4 rounded-lg shadow-md mb-2 transition-colors duration-300 hover:bg-gray-500 focus:outline-none focus:bg-gray-300"
+                                    href="#" style="font-size:1rem;">{{ $item->name }}</a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+                <div class="rounded-lg cards shadow-lg p-4">
+                    <h2 class="text-lg font-semibold mb-4">Tagar</h2>
+                    <hr>
+                    <ul class="max-h-80 overflow-y-auto space-y-1 mt-1">
+                        @foreach ($tags as $item)
+                            <li>
+                                <a class="block py-3 px-4 rounded-lg shadow-md mb-2 transition-colors duration-300 hover:bg-gray-500 focus:outline-none focus:bg-gray-300"
+                                    href="#" style="font-size:1rem;">#{{ $item->name }}</a>
+                            </li>
+                        @endforeach
+                    </ul>
                 </div>
             </div>
+
         </div>
     </div>
 @endsection

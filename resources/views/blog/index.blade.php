@@ -97,18 +97,20 @@
                 <div class="cards rounded-md p-6">
                     <!-- Foto Profil -->
                     <div class="flex items-center justify-center">
-                        <img alt="Foto Profil" class="rounded-full w-24 h-24"
-                            src="https://miro.medium.com/v2/resize:fill:72:72/1*YhHjHHQnvLRlIqRhEhsnFw.jpeg">
+                        <img alt="ego oktafanda" class="rounded-full w-24 h-24"
+                            src="{{ asset('public/img/user/ego.jpg') }}">
                     </div>
 
                     <!-- Informasi Profil -->
-                    <div class="mt-6 text-center">
-                        <h3 class="text-xl font-medium text-gray-500">Ego Oktafanda</h3>
+                    <div class="mt-6 text-center text-sm">
+                        <a href="{{ url('egooktafanda') }}">
+                            <h3 class="text-md text-bold font-medium text-gray-500">Ego Oktafanda</h3>
+                        </a>
                         <p class="mt-2 text-gray-500">Software Enginering</p>
                     </div>
 
                     <!-- Kontak Profil -->
-                    <div class="flex justify-center mt-6" style="flex-direction: column; align-items: center">
+                    <div class="flex justify-center mt-6 text-sm" style="flex-direction: column; align-items: center">
                         <div>
                             egooktafanda1097@gmail.com
                         </div>

@@ -71,11 +71,37 @@
         .icon-circle {
             border-bottom: none !important;
         }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.5;
+            padding: 5px 10px;
+            border-radius: 30px;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .button--rounded {
+            border-radius: 50px;
+        }
+
+        .blog-btn {
+            border: 1px solid #fff;
+        }
+
+        .blog-btn:hover {
+            background: rgba(0, 0, 0, .5);
+        }
     </style>
 
 </head>
 
-<body>
+<body data-theme="dark">
 
 
     {{-- <div class="lexal_tm_loader-wrapper">

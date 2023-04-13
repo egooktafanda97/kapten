@@ -130,7 +130,7 @@
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
                         <a href="{{ url('') }}">
-                            <img alt="Logo" class=" h-10 w-10" src="{{ asset('img/logo/logo.png') }}">
+                            <img alt="Logo" class=" h-10 w-10" src="{{ asset('public/img/logo/logo.png') }}">
                         </a>
                         <strong class="sm:hidden">APTEN</strong>
                     </div>
@@ -141,7 +141,7 @@
                         </a>
 
                         <a class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium"
-                            href="{{ url('') }}">
+                            href="{{ url('egooktafanda') }}">
                             Me
                         </a>
                     </div>
@@ -240,8 +240,8 @@
 
         // Check the checkbox based on the user's preferred theme
         if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            darkModeToggle.checked = false;
-            setTheme("light");
+            darkModeToggle.checked = true;
+            setTheme("dark");
         }
 
         // Toggle mobile menu visibility
