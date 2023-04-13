@@ -29,8 +29,8 @@
     <link href="https://fonts.googleapis.com/css?family=Saira:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700" rel="stylesheet">
-    <link href="{{ asset('site/html') }}/css/plugins.css" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('site/html') }}/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('public/site/html') }}/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('public/site/html') }}/css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
         rel="stylesheet" />
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
@@ -140,10 +140,10 @@
     <!-- / WRAPPER ALL -->
 
     <!-- SCRIPTS -->
-    <script src="{{ asset('site/html') }}/js/jquery.js"></script>
+    <script src="{{ asset('public/site/html') }}/js/jquery.js"></script>
     <!--[if lt IE 10]> <blade ___scripts_2___/> <![endif]-->
-    <script src="{{ asset('site/html') }}/js/plugins.js"></script>
-    <script src="{{ asset('site/html') }}/js/init.js"></script>
+    <script src="{{ asset('public/site/html') }}/js/plugins.js"></script>
+    <script src="{{ asset('public/site/html') }}/js/init.js"></script>
     <!-- /SCRIPTS -->
 </body>
 
