@@ -2,7 +2,7 @@
 @section('hero')
     <!-- HERO -->
     <div class="lexal_tm_home_hero" id="home">
-        <div class="image" data-img-url="{{ asset('img/user/ego.jpg') }}"></div>
+        <div class="image" data-img-url="{{ asset('public/img/user/ego.jpg') }}"></div>
         <div class="overlay"></div>
         <div class="overlay_texts">
             <h3 class="name">Ego Oktafanda</h3>
@@ -35,7 +35,7 @@
             <div class="lexal_tm_about_wrap lexal_tm_waypoint_effect2">
                 <div class="img_box">
                     <div class="author_img">
-                        <img alt="ego oktafanda" src="{{ asset('img/user/me.jpg') }}" style="width: 100%;" />
+                        <img alt="ego oktafanda" src="{{ asset('public/img/user/me.jpg') }}" style="width: 100%;" />
                         <div class="main_image" style="border: 1px solid #fff;"></div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@
                         <li>
                             <div class="list_inner">
                                 <div class="image_wrap">
-                                    <img alt="{{ $item->judul }}" src="{{ asset('project/' . $item->gambar) }}"
+                                    <img alt="{{ $item->judul }}" src="{{ asset('public/project/' . $item->gambar) }}"
                                         style="width: 100%; height: 200px;" />
                                     <div class="main_image" data-img-url="img/portfolio/1.jpg">
                                     </div>

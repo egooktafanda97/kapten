@@ -2,7 +2,7 @@
 @section('hero')
     <!-- HERO -->
     <div class="lexal_tm_home_hero" id="home">
-        <div class="image" data-img-url="{{ asset('img/user/ego.jpg') }}"></div>
+        <div class="image" data-img-url="{{ asset('public/public/img/user/ego.jpg') }}"></div>
         <div class="overlay"></div>
         <div class="overlay_texts">
             <h3 class="name">{{ $project->judul }}</h3>
@@ -93,7 +93,7 @@
                     <div class="extra_images_list">
                         <ul>
                             <li>
-                                <img alt="{{ $project->judul }}" src="{{ asset('project/' . $project->gambar) }}"
+                                <img alt="{{ $project->judul }}" src="{{ asset('public/project/' . $project->gambar) }}"
                                     style="border-radius: 10px;border:2px solid #fff" />
                                 {{-- <div class="overlay"></div> --}}
                             </li>
