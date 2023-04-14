@@ -25,14 +25,34 @@
     <style>
         pre {
             /* background-color: #f4f4f4; */
-            border: 1px solid #ddd;
             border-radius: 3px;
             font-size: 14px;
             line-height: 1.4;
             padding: 10px;
-            overflow-x: auto;
-            margin-bottom: 10px;
+            /* overflow-x: auto; */
             font-size: 0.8rem !important;
+            margin-top: 10px !important;
+            margin-bottom: 10px !important;
+        }
+
+        pre code {
+            overflow-x: auto !important;
+            width: 100%;
+            border: 1px solid gray;
+            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+
+        code {
+            display: inline-block !important;
+            font-family: Consolas, Menlo, Monaco, monospace !important;
+            font-size: .9rem !important;
+            line-height: 1.5;
+            color: #333;
+            background-color: gray;
+            border-radius: 3px;
+            color: #fff;
         }
 
         /* Tema Umum */
