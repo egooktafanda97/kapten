@@ -188,7 +188,7 @@
                                 <div class="image_wrap">
                                     <img alt="{{ $item->judul }}" src="{{ asset('public/project/' . $item->gambar) }}"
                                         style="width: 100%; height: 200px;" />
-                                    <div class="main_image" data-img-url="img/portfolio/1.jpg">
+                                    <div class="main_image" data-img-url="{{ asset('public/img/portfolio/1.jpg') }}">
                                     </div>
                                 </div>
                                 <div class="overlay"></div>
@@ -196,7 +196,7 @@
                                     <h3>{{ $item->judul }}</h3>
                                     <span>{{ $item->kategori }}</span>
                                 </div>
-                                <a class="full_link" href="{{ url('porto/' . $item->id) }}"></a>
+                                <a class="full_link" href="{{ url('project/' . $item->id) }}"></a>
                             </div>
                         </li>
                     @endforeach

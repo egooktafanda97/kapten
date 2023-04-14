@@ -36,7 +36,7 @@
                 <div>
 
                 </div>
-                <div style="padding-left:20px">
+                <div>
                     <div class="container mx-auto max-w-screen-xl">
                         <article class="no-tailwindcss-base">
                             {!! $post->content !!}
