@@ -196,7 +196,7 @@
                                     <h3>{{ $item->judul }}</h3>
                                     <span>{{ $item->kategori }}</span>
                                 </div>
-                                <a class="full_link" href="{{ url('project/' . $item->id) }}"></a>
+                                <a class="full_link" href="{{ url('egooktafanda/project/' . $item->id) }}"></a>
                             </div>
                         </li>
                     @endforeach
